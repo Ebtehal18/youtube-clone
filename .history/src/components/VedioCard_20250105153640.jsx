@@ -12,7 +12,7 @@ export default function VedioCard({ vedio }) {
 
     return <Card 
   sx={{
-    width: { xs: '400px', sm: '358px', md: "320px", },
+    width: { xs: '100%', sm: '358px', md: "320px", },
     boxShadow: 'none',
     borderRadius: 0,
   }}
@@ -22,7 +22,7 @@ export default function VedioCard({ vedio }) {
   <CardMedia 
   image={snippet?.thumbnails?.high?.url}
   alt={snippet?.title}
-  sx={{ width: { xs: '400px', sm: '358px'}, height: '180px' }} 
+  sx={{ width: { xs: '400px', sm: '358px'}, height: 180 }} 
   />
 <CardContent sx={{backgroundColor:"#1e1e1e",height:106}}>
 <Link  to={videoId?`/vedio/${videoId}`:demoVideoUrl}>
